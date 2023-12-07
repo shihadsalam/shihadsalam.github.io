@@ -1,1 +1,532 @@
-Hello World
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+
+<!------------ Navigation ---------->
+    <nav id="desktop-nav">
+        <div class="logo">Shihad Salam</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <!-- <li><a href="#projects">Projects</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+                <li><img
+                    id="modeToggle"
+                    class="icon color-icon"
+                     src="./assets/theme_light.png" 
+                    src-light="./assets/theme_light.png"
+                    src-dark="./assets/theme_dark.png"
+                    alt="">
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Shihad Salam</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links ">
+                <li><a href="#about" onlclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onlclick="toggleMenu()">Skills</a></li>
+                <!-- <li><a href="#projects" onlclick="toggleMenu()">Projects</a></li> -->
+                <li><a href="#contact" onlclick="toggleMenu()">Contact</a></li>
+                <li><img
+                    id="modeToggle2"
+                    class="icon color-icon"
+                     src="./assets/theme_light.png" 
+                    src-light="./assets/theme_light.png"
+                    src-dark="./assets/theme_dark.png"
+                    alt="">
+                </li>
+            </div>
+        </div>
+    </nav>
+
+<!---------- Profile ----------->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.jpg" alt="photo">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hey, I'm</p>
+            <h1 class="title">Shihad Salam </h1>
+            <p class="section__text__p2">Software Architect</p>
+            <div class="btn-container">
+                <button
+                    class="btn btn-color-2"
+                    onclick="window.open('./assets/Resume_Shihad.pdf')"
+                    >Download CV
+                </button>
+                <button
+                    class="btn btn-color-1"
+                    onclick="location.href='.#contact'"
+                >Contact Info
+            </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                    src="./assets/linkedin_light.png"
+                    src-light="./assets/linkedin_light.png"
+                    src-dark="./assets/linkedin_dark.png"
+                    alt="linkedin"
+                    class="icon linkedin-icon"
+                    onclick="window.open(href='https://www.linkedin.com/in/shihad-salam-08259829/')"
+                />
+                <img 
+                    src="./assets/github_light.png"
+                    src-light="./assets/github_light.png"
+                    src-dark="./assets/github_dark.png"
+                    alt="github"
+                    class="icon github-icon"
+                    onclick="window.open(href='https://github.com/shihadsalam')"
+                />
+            </div>
+        </div>
+    </section>
+
+<!----------- About ----------->
+    <section id="about" >
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                    src="./assets/aboutpic.jpg" 
+                    alt="about pic"
+                    class="aboutpic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                            src="./assets/experience_light.png"
+                            src-light="./assets/experience_light.png" 
+                            src-dark="./assets/experience_dark.png" 
+                            alt="experience"
+                            class="icon"
+                         />
+                         <h3>Experience</h3>
+                         <p>14 Years<br>Software Architect</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                            src="./assets/education_light.png"
+                            src-light="./assets/education_light.png" 
+                            src-dark="./assets/education_dark.png" 
+                            alt="education"
+                            class="icon"
+                         />
+                         <h3>Education</h3>
+                         <p>B-Tech<br>Information Technology</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Technology leader and team player with significant contribution to the digital transformation journey of Fortune clients across the globe.
+                    <p> ✪ 13 plus years of expertise in designing & implementing distributed & scalable cloud-native software products
+                    <p> ✪ Mentored and managed engineering teams to quality technical deliverables
+                    <p> ✪ Experienced in preparing & presenting technical design proposals to business stakeholders
+                    <p> ✪ Rich expertise in Java/JEE latest technology stack, mainly in the Spring ecosystem
+                    <p> ✪ Proven experience in Event-Driven Data Streaming Platforms using Apache Kafka
+                    <p> ✪ Banking, Financial Services, Insurance and Automotive domain experience
+            </div>
+        </div>
+    <img
+        src="./assets/arrow_light.png"
+        src-light="./assets/arrow_light.png"
+        src-dark="./assets/arrow_dark.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    <img src="" alt="">
+    </section>
+
+<!---------- Experience -------->
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills & Certifications</h1>
+        <div class="experience-details-containers">
+            <div class="about-containers">
+                <div class="details-containers">
+                    <h2 class="experience-sub-title">Architecture</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                                class="icon"
+                                src="assets/checkmark-light.PNG"
+                                src-light="assets/checkmark-light.PNG" 
+                                src-dark="assets/checkmark-dark.PNG" 
+                                alt="experience-icon"
+                            />
+                            <div>
+                                <h3>Enterprise Architecture</h3>
+                            </div>
+                        </article>
+                        <article>
+                             <img 
+                                class="icon"
+                                src="assets/checkmark-light.PNG"
+                                src-light="assets/checkmark-light.PNG" 
+                                src-dark="assets/checkmark-dark.PNG" 
+                                alt="experience-icon"
+                            />
+                       
+                        <div>
+                            <div>
+                                <h3>Solution Architecture</h3>
+                            </div>
+                        </article>
+                        <article>
+                          <img 
+                                class="icon"
+                                src="assets/checkmark-light.PNG"
+                                src-light="assets/checkmark-light.PNG" 
+                                src-dark="assets/checkmark-dark.PNG" 
+                                alt="experience-icon"
+                            />
+                        <div>
+                            <div>
+                                <h3>Technical Architecture</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Second Details container -->
+                <div class="details-containers">
+                    <h2 class="experience-sub-title">Technology</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                                class="icon"
+                                src="assets/checkmark-light.PNG"
+                                src-light="assets/checkmark-light.PNG" 
+                                src-dark="assets/checkmark-dark.PNG" 
+                                alt="experience-icon"
+                            />
+                        <div>
+                            <div>
+                                <h3>Java</h3>
+                            </div>
+                        </article>
+                        <article>
+                             <img 
+                                class="icon"
+                                src="assets/checkmark-light.PNG"
+                                src-light="assets/checkmark-light.PNG" 
+                                src-dark="assets/checkmark-dark.PNG" 
+                                alt="experience-icon"
+                            />
+                        <div>
+                            <div>
+                                <h3>SpringBoot</h3>
+                            </div>
+                        </article>
+                        <article>
+                             <img 
+                                class="icon"
+                                src="assets/checkmark-light.PNG"
+                                src-light="assets/checkmark-light.PNG" 
+                                src-dark="assets/checkmark-dark.PNG" 
+                                alt="experience-icon"
+                            />
+                            <div>
+                            <div>
+                                <h3>Microservices</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                class="icon"
+                                src="assets/checkmark-light.PNG"
+                                src-light="assets/checkmark-light.PNG" 
+                                src-dark="assets/checkmark-dark.PNG" 
+                                alt="experience-icon"
+                            />
+                        <div>
+                            <div>
+                                <h3>AWS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                class="icon"
+                                src="assets/checkmark-light.PNG"
+                                src-light="assets/checkmark-light.PNG" 
+                                src-dark="assets/checkmark-dark.PNG" 
+                                alt="experience-icon"
+                            />
+                        <div>
+                            <div>
+                                <h3>Kafka</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                class="icon"
+                                src="assets/checkmark-light.PNG"
+                                src-light="assets/checkmark-light.PNG" 
+                                src-dark="assets/checkmark-dark.PNG" 
+                                alt="experience-icon"
+                            />
+                        <div>
+                            <div>
+                                <h3>REST</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                class="icon"
+                                src="assets/checkmark-light.PNG"
+                                src-light="assets/checkmark-light.PNG" 
+                                src-dark="assets/checkmark-dark.PNG" 
+                                alt="experience-icon"
+                            />
+                        <div>
+                            <div>
+                                <h3>GraphQL</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                class="icon"
+                                src="assets/checkmark-light.PNG"
+                                src-light="assets/checkmark-light.PNG" 
+                                src-dark="assets/checkmark-dark.PNG" 
+                                alt="experience-icon"
+                            />
+                        <div>
+                            <div>
+                                <h3>Elastic</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                class="icon"
+                                src="assets/checkmark-light.PNG"
+                                src-light="assets/checkmark-light.PNG" 
+                                src-dark="assets/checkmark-dark.PNG" 
+                                alt="experience-icon"
+                            />
+                        <div>
+                            <div>
+                                <h3>Redis</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                class="icon"
+                                src="assets/checkmark-light.PNG"
+                                src-light="assets/checkmark-light.PNG" 
+                                src-dark="assets/checkmark-dark.PNG" 
+                                alt="experience-icon"
+                            />
+                        <div>
+                            <div>
+                                <h3>SQL</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                class="icon"
+                                src="assets/checkmark-light.PNG"
+                                src-light="assets/checkmark-light.PNG" 
+                                src-dark="assets/checkmark-dark.PNG" 
+                                alt="experience-icon"
+                            />
+                        <div>
+                            <div>
+                                <h3>NoSQL</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                class="icon"
+                                src="assets/checkmark-light.PNG"
+                                src-light="assets/checkmark-light.PNG" 
+                                src-dark="assets/checkmark-dark.PNG" 
+                                alt="experience-icon"
+                            />
+                        <div>
+                            <div>
+                                <h3>Docker</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                class="icon"
+                                src="assets/checkmark-light.PNG"
+                                src-light="assets/checkmark-light.PNG" 
+                                src-dark="assets/checkmark-dark.PNG" 
+                                alt="experience-icon"
+                            />
+                        <div>
+                            <div>
+                                <h3>Kubernetes</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                class="icon"
+                                src="assets/checkmark-light.PNG"
+                                src-light="assets/checkmark-light.PNG" 
+                                src-dark="assets/checkmark-dark.PNG" 
+                                alt="experience-icon"
+                            />
+                        <div>
+                            <div>
+                                <h3>Junit</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                class="icon"
+                                src="assets/checkmark-light.PNG"
+                                src-light="assets/checkmark-light.PNG" 
+                                src-dark="assets/checkmark-dark.PNG" 
+                                alt="experience-icon"
+                            />
+                        <div>
+                            <div>
+                                <h3>Maven</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Certifications-->
+        <div class="details-containers">
+            <h2 class="experience-sub-title">Certifications</h2>
+            <div class="article-container">
+                <article>
+                    <img 
+                        class="icon"
+                        src="assets/checkmark-light.PNG"
+                        src-light="assets/checkmark-light.PNG" 
+                        src-dark="assets/checkmark-dark.PNG" 
+                        alt="experience-icon"
+                    />
+                    <div>
+                        <h3>TOGAF Certified Enterprise Architect</h3>
+                    </div>
+                </article>
+                <article>
+                    <img 
+                       class="icon"
+                       src="assets/checkmark-light.PNG"
+                       src-light="assets/checkmark-light.PNG" 
+                       src-dark="assets/checkmark-dark.PNG" 
+                       alt="experience-icon"
+                   />
+               <div>
+                   <div>
+                       <h3>AWS Certified Solution Architect</h3>
+                   </div>
+               </article>
+                <article>
+                    <img 
+                          class="icon"
+                          src="assets/checkmark-light.PNG"
+                          src-light="assets/checkmark-light.PNG" 
+                          src-dark="assets/checkmark-dark.PNG" 
+                          alt="experience-icon"
+                      />
+                  <div>
+                      <div>
+                          <h3>Oracle Certified Java Web Developer</h3>
+                      </div>
+                  </article>
+               
+                <article>
+                    <img 
+                          class="icon"
+                          src="assets/checkmark-light.PNG"
+                          src-light="assets/checkmark-light.PNG" 
+                          src-dark="assets/checkmark-dark.PNG" 
+                          alt="experience-icon"
+                      />
+                  <div>
+                      <div>
+                          <h3>Microsoft Azure Solutions Architect</h3>
+                      </div>
+                  </article>
+            </div>
+        </div>
+
+    <img
+        src="./assets/arrow_light.png"
+        src-light="./assets/arrow_light.png"
+        src-dark="./assets/arrow_dark.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+<!----------- Contact ----------->
+    <section  id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/email_light.png" 
+                    src-light="./assets/email_light.png"
+                    src-dark="./assets/email_dark.png"
+                    alt="email"
+                   class="icon contact-icon email-icon"
+                >
+                <p><a href="mailto:ashishk2323@outlook.com">shihadsalam@gmail.com</a></p>
+            </div>
+            <div>
+                <div class="contact-info-container">
+                    <img 
+                        src="./assets/phone_light.png" 
+                        src-light="./assets/phone_light.png"
+                        src-dark="./assets/phone_light.png"
+                        alt="Phone"
+                       class="icon Phone-icon">
+                <p>+91 9747075743</p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/linkedin_light.png"
+                    src-light="./assets/linkedin_light.png"
+                    src-dark="./assets/linkedin_dark.png"
+                    alt="linkedin"
+                    class="icon linkedin-icon"
+                    onclick="window.open(href='https://www.linkedin.com/in/shihad-salam-08259829/')"
+                />
+                <p><a target="_blank"  href="https://www.linkedin.com/in/shihad-salam-08259829/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+   
+<!------------ Footer ----------->
+   
+<footer>
+        <p>Copyright &#169; 2023 Shihad Salam.&nbsp All Right Reserved.</p>
+    </footer>
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>
